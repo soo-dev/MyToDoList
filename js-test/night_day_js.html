@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>night and day</title>
-
+    <script src="colors.js"></script>
 </head>
 <body>
-    <h1><a href="js_test.html">WEB</a></h1>
+        <h1><a href="night_day_html.html">WEB</a></h1>
     <!-- <input type="button" value="night" onclick="
         document.querySelector('body').style.backgroundColor = 'black'
         document.querySelector('body').style.color = 'white'
@@ -30,23 +30,12 @@
         }
     "> -->
     <input  type="button" value="night" onclick="
-
-        var target = document.querySelector('body')
-        if (this.value === 'night') {     
-            target.style.backgroundColor = 'black'
-            target.style.color = 'white'
-            this.value = 'day'
-        }
-        else {
-            target.style.backgroundColor = 'white'
-            target.style.color = 'black'
-            this.value = 'night'
-        }
+        nightDayHandler(this);
     ">
     <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="night_day_html.html">HTML</a></li>
+        <li><a href="night_day_css.html">CSS</a></li>
+        <li><a href="night_day_js.html">JavaScript</a></li>
     </ol>
     <h2>JavaScript</h2>
     <p>

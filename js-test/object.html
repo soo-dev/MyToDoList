@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworkers = {
+           "programmer" : "soo",
+           "designer" : "soos"
+        };
+        document.write("programmer : " + coworkers.programmer + "<br>");
+        document.write("designer : " + coworkers.designer + "<br>");
+        coworkers.bookkeeper = "sy";
+        document.write("bookkeeper : " + coworkers.bookkeeper + "<br>");
+        coworkers["data scientist"] = "syo";
+        document.write("data scientist : " + coworkers["data scientist"]);
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for (var key in coworkers) {
+           document.write(key + ' : ' + coworkers[key] + '<br>');
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+         // 위에 있는 코드랑 == function showAll() {}
+         // 결과에 showAll도 보이는 이유는 coworkers.showAll coworkes에 showAll이 소속되어 있기 때문에 if 문으로 제거해주면 됨.
+        coworkers.showAll = function() { 
+            for (var key in this) {
+                document.write(key + ' : ' + this[key] + '<br>');
+            }
+        }
+        coworkers.showAll();
+
+        
+    </script>
+</body>
+</html>
