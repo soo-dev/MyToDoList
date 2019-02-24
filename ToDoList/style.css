@@ -1,0 +1,13 @@
+body{
+  width: 500px;
+  margin: auto;
+}
+
+.header {
+  margin-top: 100px;
+}
+
+.add {
+  margin-left: 75px;
+  padding: auto;
+}
