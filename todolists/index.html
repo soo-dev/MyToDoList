@@ -5,23 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>todolist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/todolists/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/todolists/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/todolists/dist/js/bootstrap.js">
+    <link rel="stylesheet" href="/todolists/dist/js/bootstrap.min.js">
+
+
    <style>
+       body{
+           width: 400px;
+           margin: auto;
+           padding: auto;
+       }
+       .main_header{
+            width: 300px;
+           margin-top: 100px;
+           text-align: center;
+       }
        .checked{
            text-decoration: line-through;
+           font-weight: bold;
        }
        li{
            list-style-type: none;
        }
+      
    </style>
 </head>
 <body>
-    <h1>To Do List</h1>
-    <input id="list" type="text">
-    <button id="newBtn">ADD</button>
-    <ul id="todolist">
+    
+    <div class="main_header">
+        <h1>To Do List</h1>
 
-    </ul>
+        <br>
+        <input id="list" type="text">
+        <button id="newBtn" class="btn btn-outline-success">ADD</button>
+        <hr>
+    </div>
+    <div class="article">
+        <ul id="todolist">
+
+        </ul>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
